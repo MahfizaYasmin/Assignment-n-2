@@ -1,0 +1,68 @@
+/* miama font style */
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+ /* inter font style */
+ .inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* share styles */
+  .text-tomato {
+    color: #E6533C;
+    font-style: italic;
+    font-weight: 800;
+  }
+  .container{
+    width: 1200px;
+    margin: 0 auto;
+    
+  }
+  body{
+    background-color: rgba(17, 17, 17, 1);
+  }
+
+  /* header style*/
+  header{
+    background-color: rgba(22, 22, 22, 0.9583);
+    margin: 0px;
+
+  }
+
+  /* navbar style*/
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-title{
+    margin: 0;
+    font-size: 2rem;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 4px;
+    margin: 0;
+   
+  }
+  nav li {
+    list-style: none;
+    margin-right: 47px;
+  }
+  nav li a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .home {
+    background-color: #E6533C;
+    border-radius: 46px;
+    padding: 8px 15px;
+  }
+  nav .fa-bars {
+    color: white;
+    display: none;
+  }
