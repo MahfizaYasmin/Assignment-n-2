@@ -35,6 +35,9 @@
     font-size: 14px;
     color: rgba(255, 255, 255, 0.5);
   }
+  .section-mb {
+    margin-bottom: 100px;
+  }
 
   /* header style*/
   header{
@@ -83,8 +86,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 38px;
-    
-    background-position: right;
     height: 550px;
   }
   .banner-title {
@@ -191,5 +192,39 @@
     .container {
         width: 335px;
         margin: 0 15px;
+    }
+    .section-mb{
+        margin-bottom: 50px;
+    }
+
+    .banner{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-title{
+        font-size: 36px;
+    }
+    .get-body{
+        top: 25px;
+    }
+    .video-detail{
+        height: 600px;
+        width: 300px;
+    }
+    .tutorial{
+        position: absolute;
+       left: 0px;
+        top: 250px;
+    }
+    .tutorial-view {
+        font-size: 18px;
+    }
+    .free-workout{
+        position: absolute;
+        top: 70px;
+        right: -20px;
+    }
+    .download-btn{
+        padding: 15px 12px;
     }
   }
