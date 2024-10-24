@@ -24,7 +24,7 @@
     font-weight: 800;
   }
   .container{
-    width: 1100px;
+    width: 1050px;
     margin: 0 auto;
     
   }
@@ -82,23 +82,97 @@
   .banner{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 50px;
+    margin-top: 38px;
+    
+    background-position: right;
+    height: 550px;
   }
   .banner-title {
     color: #FFFFFF;
     font-size: 4rem;
+    position: relative;
+    font-weight: 900;
+    margin-bottom: 0;
+    
   }
   .shape {
     font-family: 'Miama', sans-serif;
     font-weight: 400;
     font-style: italic;
-    text-overflow: ellipsis;
+    position: relative;
   }
-  .work {
+  .get-body{
+    position: relative;
+    top: 45px;
+  }
+  .healthy{
+    position: absolute;
+    bottom: -3px;
+  }
+  .banner-description{
+    margin: 24px 0;
+  }
+  .btn-container{
+    display: flex;
+    gap: 14px;
+  }
+  .download-btn {
+    color: #FFFFFF;
+    background-color: rgba(17, 17, 17, 1);
+    font-size: 1rem;
+    border-radius: 42px;
+    padding: 16px 40px;
+    border: 1px solid white;
+  }
+  
+  .video-detail {
     background-image: url('../images/Images\ 2.png');
     background-repeat: no-repeat;
-    background-position: center;
-
+    background-position: right;
+    display: flex;
+    gap: 150px;
+    position: relative;
+  }
+  .video-bg {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    height: 65px;
+    padding: 15px 23px;
+    background-color: rgba(48, 48, 48, 0.54);
+  }
+  .tutorial {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    top: 390px;
+    left: 120px;
+  }
+  .tutorial-view {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 900;
+    color: #FFFFFF;
+    padding: 0;
+  }
+  .tutorial p {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+  
+  .free-workout{
+    position: relative;
+    top: 100px;
+    right: -50px;
+  }
+  .Workout-video-viwe {
+    font-size: 40px;
+    font-weight: 900;
+    color: #FFFFFF;
+    margin: 0;
+  }
+  .Workout-description {
+    margin: 5px 0;
   }
 
   /* responsive media queries */
