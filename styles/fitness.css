@@ -40,6 +40,7 @@
   }
   body{
     background-color: rgb(16, 16, 16);
+    margin: 0;
   }
   .description {
     font-size: 14px;
@@ -252,6 +253,66 @@
     margin-bottom: 24px;
   }
 
+  /* BMI Calculator */
+  .bmi-content {
+    margin: 0 194px;
+  }
+  .bmi-title{
+    font-size: 28px;
+    font-weight: 900;
+    color: #FFFFFF;
+  }
+  .calculator-content{
+    background-color: rgba(34, 34, 34, 1);
+    margin-top: 80px;
+    width: 100%;
+    padding: 50px 0;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 50px 0;
+  }
+  th{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  th, td {
+    border: 1px solid rgb(58, 54, 54);
+    text-align: start;
+    padding: 13px 18px;
+  }
+  .calculator-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .calculate-input{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 34px;
+  }
+  .calculate-input .box{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 13px 20px;
+    border-radius: 8px;
+  }
+  #activity{
+    grid-column: span 2;
+  }
+  .box input {
+    background: none;
+    border: none;
+  }
+  .fa-caret-down{
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .caret-down {
+    display: flex;
+    justify-content: space-between;
+  }
+
   /* responsive media queries */
   /* mobile devices */
   @media screen and (max-width: 576px) {
@@ -336,4 +397,7 @@
     .run-container img {
         width: 280px;
     }
+    .bmi-content {
+        margin: 0 10px;
+      }
   }
