@@ -18,6 +18,16 @@
     padding: 16px 40px;
     border: none;
   }
+  .title-primary {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 2.25rem;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  .content {
+    text-align: center;
+  }
   .text-tomato {
     color: #E6533C;
     font-style: italic;
@@ -37,11 +47,11 @@
   }
   .section-mb {
     margin-bottom: 100px;
-  }
+  } */
 
   /* header style*/
   header{
-    background-color: rgba(18, 17, 17, 0.958);
+    background-color: rgba(33, 31, 31, 0.958);
   }
 
   /* navbar style*/
@@ -82,7 +92,7 @@
   }
 
   /* banner style */ 
-  .banner{
+  .banner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 38px;
@@ -134,12 +144,22 @@
     gap: 150px;
     position: relative;
   }
+  /* .video-detail-container{
+    position: relative;
+  } */
   .video-bg {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     height: 65px;
     padding: 15px 23px;
     background-color: rgba(48, 48, 48, 0.54);
+    position: relative;
+  }
+  .play{
+    display: block;
+  }
+  .video-play {
+    display: none;
   }
   .tutorial {
     display: flex;
@@ -162,11 +182,11 @@
   }
   
   .free-workout{
-    position: relative;
+    position: absolute;
     top: 100px;
     right: -50px;
   }
-  .Workout-video-viwe {
+  .Workout-video-view {
     font-size: 40px;
     font-weight: 900;
     color: #FFFFFF;
@@ -174,6 +194,31 @@
   }
   .Workout-description {
     margin: 5px 0;
+  }
+
+  /* habits styles */
+  .habit-section{
+    margin: 0 50px;
+  }
+  .habit-card{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 35px;
+    margin-top: 40px;
+  }
+  .card{
+    margin: 0;
+  }
+  .card{
+    text-align: center;
+ }
+  .card img {
+    border-radius: 50%;
+  }
+  .habit-cart-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFFFFF;
   }
 
   /* responsive media queries */
@@ -196,10 +241,24 @@
     .section-mb{
         margin-bottom: 50px;
     }
-
+    .play{
+        display: none;
+    }
+    .video-play{
+        display: block;
+    }
     .banner{
+        height: auto;
+    }
+    .banner
+    {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .habit-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
     }
     .banner-title{
         font-size: 36px;
@@ -226,5 +285,15 @@
     }
     .download-btn{
         padding: 15px 12px;
+    }
+    .title-primary {
+        font-size: 1.25rem;
+    }
+    .content{
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .card{
+        text-align: center;
     }
   }
