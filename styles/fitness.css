@@ -48,11 +48,11 @@
   }
   .section-mb {
     margin-bottom: 100px;
-  } */
+  }
 
   /* header style*/
   header{
-    background-color: rgba(33, 31, 31, 0.958);
+    background-color: rgba(16, 15, 15, 0.94);
   }
 
   /* navbar style*/
@@ -373,9 +373,50 @@
     margin: 0;
   }
 
+  /* footer styles */
+  footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-top: 66px;
+    padding-bottom: 35px;
+  }
+  .footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    margin-bottom: 75px;
+  }
+  .footer-title {
+    font-size: 70px;
+    margin: 0;
+  }
+  .get-started {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 39px;
+  }
+  .started-item{
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+  }
+  hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .reserved{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-top: 35px;
+  }
+
   /* responsive media queries */
   /* mobile devices */
   @media screen and (max-width: 576px) {
+    header{
+        margin-top: 30px;
+    }
     nav li {
         display: none;
     }
@@ -405,10 +446,14 @@
     .run-container,
     .pilates-studio,
     .calculator-container,
-    .team-container
+    .team-container,
+    .footer-container
     {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-container{
+        gap: 30px;
     }
     .habit-card {
         display: grid;
