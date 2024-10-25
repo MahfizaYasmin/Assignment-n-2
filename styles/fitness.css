@@ -319,6 +319,60 @@
     right: 20px;
   }
 
+  /* meet our team styles */
+  .team-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 18px;
+    margin-top: 58px;
+  }
+  
+  .team-card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 272px;
+    border-radius: 18px;
+    position: relative;
+  }
+  #team-1 {
+    background-image: url('../images/Rectangle\ 25.png'); 
+  }
+  #team-2 {
+    background-image: url('../images/trainer2.png');
+  }
+  #team-3 {
+    background-image: url('../images/trainer3.png');
+  }
+  #team-4 {
+    background-image: url('../images/Rectangle\ 24.png');
+  }
+  #team-5 {
+    background-image: url('../images/trainer5.png');
+  }
+  #team-6 {
+    background-image: url('../images/trainer6.png');
+  }
+  .team-card-content{
+   position: absolute;
+   bottom: 0;
+   margin-bottom: 15px;
+   margin-left: 18px;
+  }
+  .team-card-content p{
+    margin: 0;
+    margin-top: 3px;
+  }
+  .trainer-name{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0;
+  }
+
   /* responsive media queries */
   /* mobile devices */
   @media screen and (max-width: 576px) {
@@ -350,7 +404,8 @@
     .banner,
     .run-container,
     .pilates-studio,
-    .calculator-container
+    .calculator-container,
+    .team-container
     {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
