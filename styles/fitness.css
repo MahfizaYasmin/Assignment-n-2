@@ -290,11 +290,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
-    margin-bottom: 34px;
+    margin: 34px 0;
   }
-  .calculate-input .box{
+  .box{
     background-color: rgba(255, 255, 255, 0.1);
-    border: none;
+     border: none;
     padding: 13px 20px;
     border-radius: 8px;
   }
@@ -304,6 +304,7 @@
   .box input {
     background: none;
     border: none;
+    width: 100%;
   }
   .fa-caret-down{
     color: rgba(255, 255, 255, 0.5);
@@ -311,12 +312,16 @@
   .caret-down {
     display: flex;
     justify-content: space-between;
+    position: relative;
+  }
+  .caret-down i {
+    position: absolute;
+    right: 20px;
   }
 
   /* responsive media queries */
   /* mobile devices */
   @media screen and (max-width: 576px) {
-
     nav li {
         display: none;
     }
@@ -344,7 +349,8 @@
     }
     .banner,
     .run-container,
-    .pilates-studio
+    .pilates-studio,
+    .calculator-container
     {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -400,4 +406,11 @@
     .bmi-content {
         margin: 0 10px;
       }
+      
+    .calculate-input{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+      
   }
